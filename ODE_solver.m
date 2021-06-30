@@ -10,6 +10,10 @@ rateConstants.k3r = 7.5e6;  % L/mol/s Data from Ruasse et al. 1986
 g = t/tm;
 dg = 1/tm;
 
+%exponential incorporation function
+%g = 1 - exp(-t/tm);
+%dg = exp(-t/tm)/tm;
+
 %volume V2(t)
 v = volume.injection + volume.main * g;
 
