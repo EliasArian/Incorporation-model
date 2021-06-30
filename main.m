@@ -15,6 +15,7 @@ concentration.I =       0.0117;             % concentration of I- in mol/L
 concentration.I2 =      0.0;                % concentration of I2 in mol/L
 concentration.I3 =      0.0;                % concentration of I3- in mol/L
 
+%initial amount of substances for each species
 initialSubstance.H = concentration.H * volume.injection;    %in mol
 initialSubstance.ClO4 = initialSubstance.H;                 %in mol
 initialSubstance.H3BO3 = concentration.H3BO3 * volume.main; %in mol
