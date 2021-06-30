@@ -37,6 +37,8 @@ tm = 0.01;
 %Interval of integration
 %linear function
 tend = tm;
+%exponential function at 5*tm
+%tend = 5*tm;
 
 %ODE solver
 [t,n] = ode15s(@ODE_solver, [0 tend], substance, options, initialSubstance, volume, tm);
