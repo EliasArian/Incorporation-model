@@ -41,7 +41,7 @@ tm = 0.01;
 tend = volume.main / volume.injection * tm;
 
 %tend for Fournier et al.'s exponential function; 
-%tend = log( (volume.main + volume.injection)/ volume.main ) * tm;
+%tend = log( (volume.main + volume.injection)/ volume.injection ) * tm;
 
 %ODE solver
 [t,n] = ode15s(@ODE_solver_Fournier, [0 tend], substance, options, initialSubstance, volume, tm);
