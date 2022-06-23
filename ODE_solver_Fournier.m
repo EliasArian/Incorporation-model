@@ -1,11 +1,12 @@
 
 function dndt = ODE_solver_Fournier(t, substance, initialSubstance, volume, tm)
 
+%For a borate buffer
+rateConstants.k1 = 1e11;    %L/mol/s for Acid-base reaction
+rateConstants.k1r = 5.6e1;  %1/s for Backreaction acid-base
 
-rateConstants.k1 = 1e11;    %Acid-base reaction
-rateConstants.k1r = 5.6e1;  %Backreaction acid-base
 rateConstants.k3 = 5.6e9;   % L/mol/s Data from Ruasse et al. 1986
-rateConstants.k3r = 7.5e6;  % L/mol/s Data from Ruasse et al. 1986
+rateConstants.k3r = 7.5e6;  % 1/s Data from Ruasse et al. 1986
 
 %linear incorporation function according to Fournier et al.
 g = 1+t/tm;
