@@ -8,5 +8,7 @@ If the according micromixing time for an experimental obtained segregation index
 Please cite these works if you apply our presented codes:
 
 doi.org/10.1016/j.ces.2021.116549
+
 doi.org/10.1016/j.cherd.2021.09.010
+
 doi.org/10.1021/acs.iecr.2c00825
